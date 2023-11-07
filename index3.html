@@ -1,0 +1,208 @@
+
+
+<!-- комментарий в HTML -->
+
+<!-- в первой строке мы сообщаем браузеру,
+  что это документ HTML5 -->
+
+<html lang="ru">
+
+  <head>
+    <title>Task 3</title>
+  </head>
+   <link rel="stylesheet" href="style3.css">
+
+  <body>
+    <header class = "header">
+      <div class = "header-cont">
+        <a href="https://www.w3schools.com"><img src="flower.jpg" alt="Цветок" class = "cart"/> </a> 
+        <div class = "hik"> Task 3</div>
+            </div>
+      </header>
+
+
+
+  <div class = "container">
+         <nav class = "page-nav content">
+             <a href="#list">Список ссылок</a>
+             <a href="#form">Форма</a>
+             <a href="#table">Таблица </a>
+        </nav>
+    <section class = "content flex-link" id = "link">
+          <ol class = "link-list">
+      <li> <a href="http://kubsu.ru"> абсолютную гиперссылку на главную страницу сайта kubsu.ru </a></li>
+      <li> <a href="https://kubsu.ru"> абсолютную на главную сайта kubsu.ru в протоколе https </a></li>
+      <li><a href="/pages/page"> сокращенную ссылку на внутреннюю страницу</a></li>
+      <li><a href="/"> сокращенную ссылку на главную страницу </a></li>
+      <li><a href="#top">  ссылку на фрагмент текущей страницы </a></li>
+      <li><a href="page"> относительную на страницу в текущем каталоге </a></li>
+      <li><a href="./about/page"> относительную на страницу в каталоге about </a></li>
+      <li><a href="../page"> относительную на страницу в каталоге уровнем выше текущего  </a></li>
+      <li><a href="../../page"> относительную на страницу в каталоге двумя уровнями выше </a></li>
+      <li>
+        <p>
+        <a href="https://example.com"> <i> link </i> </a>контекстную в тексте абзаца
+        </p>
+
+      </li>
+
+      <li><a href="https://www.w3schools.com/html/html_links.asp#anchor"> ссылку на фрагмент страницы стороннего сайта </a></li>
+      <li><a href="file:///Users/samvelsimavoryan/Downloads/1/index.html?param1=p1&param2=p2&param3=p3"> ссылку с тремя параметрами в URL </a></li>
+      <li><a href="file:///Users/samvelsimavoryan/Downloads/1/index.html" id = "param1"> ссылку с параметром id в URL </a></li>
+      <li>
+        <a href="https://www.google.com/search?sca_esv=564986265&rlz=1C5CHFA_enRU1026RU1026&q=cat&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjj3KL1rqeBAxXvLBAIHXtBDWoQ0pQJegQIDRAB#imgrc=Kl3KKhCsQyey_M" alt="" usemap = "#mappy"> ссылки из прямоугольных и круглых областей картинки (HTML-тег map) </a>
+        <br>
+
+        <map name = "mappy">
+          <area shape="rect" coords="40,25,80,120" href="http://kubsu.ru" alt = "прямоугольная область">
+          <area shape="circle" coords="100,10,25" href="http://kubsu.ru" alt = "круглая область">
+
+        </map>
+
+      </li>
+
+
+      <li><a href> ссылку с пустым href  </a></li>
+      <li><a> ссылку без href </a></li>
+
+      <li><a href="https://example.com" rel = "notfollow">  ссылку, по которой запрещен переход поисковикам </a></li>
+      <li><a href="https://example.com" rel = "notfollow"> <!--noindex--> запрещенную для индексации поисковиками <!--noindex--> </a></li>
+      <li><a href = "ftp://user222@example.com/files.file.html">  ссылку на файл на сервере FTP с авторизацией </a></li>
+
+      <li><a href = "https://www.youtube.com" title = "Youtube"> Youtube </a></li>
+      <li><a href = "https://www.facebook.com" title = "Facebook"> Facebook </a></li>
+
+
+    </ol>
+      
+    </section>
+
+       
+      <section class = "content flex-table">
+
+      <table class = "table" id = "table">
+
+    <tbody col span="3">
+      <tr>
+        
+        <th>Колонка 1</th>
+        <th>Колонка 2</th>
+        <th>Колонка 3</th>
+        <th>Колонка 4</th>
+      </tr>
+      <tr >
+        <td colspan="2" >Ячейка 11 объединенная с 12</td>
+        <td>Ячейка 13</td>
+        <td>Ячейка 14</td>
+      </tr>
+      <tr class="tab" >
+        <td>Ячейка 21</td>
+        <td>Ячейка 22</td>
+        <td>Ячейка 23</td>
+        <td>Ячейка 24</td>
+      </tr>
+      <tr class="tab" >
+        <td >Ячейка 31</td>
+        <td colspan="2">Ячейка 32 объединённая с 33</td>
+        <td>Ячейка 34</td>
+      </tr>
+      <tr >
+        <td>Ячейка 41</td>
+        <td>Ячейка 42</td>
+        <td rowspan="2">Ячейка 43 в объеднении с 53</td>
+        <td>Ячейка 44</td>
+      </tr>
+      <tr class="tab">
+        <td colspan="2" >Ячейка 51 в объединении с 52</td>
+      </tr>
+
+     
+    
+    </tbody>
+  </table>
+</section>
+
+    <form action="/" method="POST" id = "form" class = "content flex-form">
+
+      <label>
+        ФИО:<br />
+        <input name="field-name-1" />
+      </label><br />
+
+      <label>
+         Email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+     <label>
+       Tel.<br />
+       <input name="field-tel">
+     </label>
+
+     </label>
+     <br>
+
+      <label>
+         Дата рождения:<br />
+        <input name="field-date"
+          value="2019-08-13"
+          type="date" />
+      </label><br />
+      Пол:<br />
+
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="man" />
+        мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="woman" />
+        женский</label><br />
+
+        <p> </p> 
+
+        <label>
+        Любимый язык программирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1" selsected="">Pascal</option>
+          <option value="Значение2" selected="">C</option>
+          <option value="Значение3" selected="">C++</option>
+          <option value="Значение4" selected="">JavaScript</option>
+          <option value="Значение5" selected="">PHP</option>
+          <option value="Значение6" selected="">Python</option>
+          <option value="Значение7" selected="">Java</option>
+        </select>
+      </label><br />
+
+      <label>
+        Биография
+        :<br />
+        <textarea name="field-name-2"></textarea>
+      </label><br />
+
+
+
+      Чекбокс:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        с контрактом ознакомлен (а)</label><br />
+
+      <input type="submit" value="Сохранить">
+    </form>
+  </div>
+  <h3></h3>
+
+
+  <footer class = "footer" id = "footer">
+    <div class = "footer-inner" style = "hegiht:300px; width:400px; padding:5px;">
+      <p>(c) Самвел Симаворян 2023</p>
+    </div>
+  </footer>
+
+  
+
+  </body>
+
+</html>
